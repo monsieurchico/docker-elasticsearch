@@ -1,0 +1,5 @@
+path:
+    data: /shared/data
+    logs: /shared/log
+    plugins: /shared/plugins
+    work: /shared/work
