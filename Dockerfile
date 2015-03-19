@@ -22,7 +22,9 @@ COPY ./resources/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
 
 # install plugins
 RUN  \
-    /elasticsearch/bin/plugin install royrusso/elasticsearch-HQ
+    /elasticsearch/bin/plugin -i royrusso/elasticsearch-HQ \
+    /elasticsearch/bin/plugin -i elasticsearch/marvel/latest
+
 
 # expose ports
 #   - 9200: HTTP
