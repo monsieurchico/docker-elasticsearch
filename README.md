@@ -9,6 +9,8 @@ You must have [Docker](https://www.docker.com/) >= 1.5.
 * [latest elasticsearch](https://www.elastic.co/products/elasticsearch)
 * [HQ plugin](https://github.com/royrusso/elasticsearch-HQ)
 
+### Configuration
+
 ### Ports
 
 You can bind ports :
