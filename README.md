@@ -8,7 +8,6 @@ You must have [Docker](https://www.docker.com/) >= 1.5.
 
 * [latest elasticsearch](https://www.elastic.co/products/elasticsearch)
 * [HQ plugin](https://github.com/royrusso/elasticsearch-HQ)
-* [Mavel plugin](http://www.elastic.co/guide/en/marvel/current/_installation.html)
 
 ### Configuration
 
