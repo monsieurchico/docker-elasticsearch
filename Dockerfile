@@ -31,7 +31,7 @@ EXPOSE 9200
 EXPOSE 9300
 
 # define mountable volumes
-VOLUME ["/shdataared", "/data/work", "/data/log", "/data/plugins", "/data/data"]
+VOLUME ["/data", "/data/work", "/data/log", "/data/data"]
 
 # add launch script
 COPY ./resources/startup.sh /startup.sh
