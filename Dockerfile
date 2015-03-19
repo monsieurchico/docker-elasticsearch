@@ -17,6 +17,9 @@ RUN \
     rm -f elasticsearch-$ES_VERSION.tar.gz && \
     mv /elasticsearch-$ES_VERSION /elasticsearch
 
+# add resources
+COPY ./resources/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
+
 # install plugins
 RUN  \
     /elasticsearch/bin/plugin install royrusso/elasticsearch-HQ
@@ -26,9 +29,6 @@ RUN  \
 #   - 9300: transport
 EXPOSE 9200
 EXPOSE 9300
-
-# add resources
-COPY ./resources/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
 
 # define mountable volumes
 VOLUME ["/shared", "/shared/work", "/shared/log", "/shared/plugins", "/shared/data"]
