@@ -20,11 +20,11 @@ You can bind ports :
 
 You can mount directories :
 
-* /shared : parent dir of all shared directories
-* /shared/data
-* /shared/log
-* /shared/plugins
-* /shared/work
+* /data : parent dir of all shared directories
+* /data/data
+* /data/log
+* /data/plugins
+* /data/work
 
 ## Usage
 
@@ -36,6 +36,6 @@ docker run \
   --name elasticsearch \
   -p 9200:9200 \
   -p 9300:9300 \
-  -v /opt/docker/elasticsearch:/shared \
+  -v /opt/docker/elasticsearch:/data \
   monsieurchico/elasticsearch
 ```

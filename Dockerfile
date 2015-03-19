@@ -31,7 +31,7 @@ EXPOSE 9200
 EXPOSE 9300
 
 # define mountable volumes
-VOLUME ["/shared", "/shared/work", "/shared/log", "/shared/plugins", "/shared/data"]
+VOLUME ["/shdataared", "/data/work", "/data/log", "/data/plugins", "/data/data"]
 
 # add launch script
 COPY ./resources/startup.sh /startup.sh
@@ -40,4 +40,4 @@ COPY ./resources/startup.sh /startup.sh
 ENTRYPOINT ["/bin/bash", "/startup.sh"]
 
 # define workdir
-WORKDIR /shared
+WORKDIR /data
