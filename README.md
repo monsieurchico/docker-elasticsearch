@@ -30,22 +30,12 @@ You can mount directories :
 
 ```bash
 # pull (auto) and run
-docker run \
-  -d monsieurchico/elasticsearch \
-  -t elasticsearch
-
-# expose ports
-docker run \
-  -d monsieurchico/elasticsearch \
-  -t elasticsearch
-  -p 9200:9200 \
-  -p 9300:9300
-
 # mount volumes
 docker run \
-  -d monsieurchico/elasticsearch \
-  -t elasticsearch
+  -d \
+  --name elasticsearch \
   -p 9200:9200 \
   -p 9300:9300 \
-  -v /path/to/my/shared:/shared
+  -v /opt/docker/elasticsearch:/shared \
+  monsieurchico/elasticsearch
 ```
