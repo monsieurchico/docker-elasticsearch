@@ -7,7 +7,7 @@ MAINTAINER Romain Derocle "rderocle@gmail.com"
 
 # prevent debian errors
 ENV DEBIAN_FRONTEND noninteractive
-ENV ES_VERSION 1.4.4
+ENV ES_VERSION 1.4.5
 
 # update os and install nginx
 RUN \
