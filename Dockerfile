@@ -2,7 +2,7 @@
 # Elasticsearch Dockerfile
 # git@github.com:monsieurchico/docker-elasticsearch.git
 #
-FROM dockerfile/java:oracle-java8
+FROM java:8-jre
 MAINTAINER Romain Derocle "rderocle@gmail.com"
 
 # prevent debian errors
